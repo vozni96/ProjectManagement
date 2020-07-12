@@ -1,0 +1,17 @@
+﻿@model ProjectManagement.ViewModel.AddCard
+@{
+    ViewData["Title"] = "AddCard";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Kart Ekle</h2>
+        <form asp-action="AddCard" asp-controller="Board">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <label asp-for="Contents"></label>
+            <input type="text" asp-for="Contents"/>
+            <button type="submit" class="btn">Kart Ekle</button>
+        </form>
+    </div>
+</div>
+

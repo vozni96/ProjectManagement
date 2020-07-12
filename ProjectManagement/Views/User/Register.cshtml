@@ -1,0 +1,26 @@
+﻿@model ProjectManagement.ViewModel.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Kaydol";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Kaydol</h2>
+
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <label asp-for="Email"></label>
+            <input asp-for="Email" />
+
+            <label asp-for="Password"></label>
+            <input asp-for="Password" />
+
+            <label asp-for="ConfirmPassword"></label>
+            <input asp-for="ConfirmPassword" />
+
+            <button class="btn" type="submit">Kaydol</button>
+        </form>
+    </div>
+</div>

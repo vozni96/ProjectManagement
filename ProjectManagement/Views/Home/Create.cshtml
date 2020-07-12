@@ -1,0 +1,15 @@
+﻿@model ProjectManagement.ViewModel.NewBoard;
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <h2>Yeni Pano Ekle </h2>
+    <form method="post" asp-action="Create" asp-controller="Home">
+        <label>Başlık</label>
+        <input type="text" asp-for="Title" />
+        <button type="submit" class="btn"> Ekle </button>  
+        
+    </form>
+</div>
+
